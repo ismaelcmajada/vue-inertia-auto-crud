@@ -22,6 +22,7 @@ export default defineConfig({
         "vuetify",
         "@inertiajs/inertia",
         "@inertiajs/inertia-vue3",
+        "vuetify/styles",
       ],
       output: {
         globals: {
