@@ -15,19 +15,21 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@inertiajs/inertia": "^0.11.1",
+    "@inertiajs/inertia-vue3": "^0.6.0",
     "@inertiajs/vue3": "^1.0.0",
     "@mdi/font": "^7.2.96",
     "@vitejs/plugin-vue": "^5.1.4",
     "axios": "^1.1.2",
     "vite": "^5.4.10",
-    "vue": "^3.5.12"
+    "vue": "^3.5.12",
+    "vuetify": "^3.7.4"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
     "lodash.debounce": "^4.0.8",
     "vite-plugin-vuetify": "^2.0.4",
     "vue-cal": "^4.10.0",
-    "vuetify": "^3.7.4",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz"
   }
 }

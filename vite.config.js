@@ -12,16 +12,23 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.js"),
+      entry: "./src/index.js",
       name: "VueInertiaAutoCrud",
       fileName: (format) => `vue-inertia-auto-crud.${format}.js`,
     },
     rollupOptions: {
-      external: ["vue", "vuetify"],
+      external: [
+        "vue",
+        "vuetify",
+        "@inertiajs/inertia",
+        "@inertiajs/inertia-vue3",
+      ],
       output: {
         globals: {
           vue: "Vue",
           vuetify: "Vuetify",
+          "@inertiajs/inertia": "Inertia",
+          "@inertiajs/inertia-vue3": "InertiaVue3",
         },
       },
     },
