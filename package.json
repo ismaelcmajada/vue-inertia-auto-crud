@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "dist/vue-inertia-auto-crud.umd.js",
   "module": "dist/vue-inertia-auto-crud.es.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "dev": "vite",
     "build": "vite build"
   },
   "keywords": [],

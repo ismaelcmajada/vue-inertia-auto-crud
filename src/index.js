@@ -1,17 +1,31 @@
-import { createApp } from "vue"
-import * as components from "./components"
-import { vuetify } from "./plugins"
+import AutoCalendar from "./components/AutoCalendar.vue"
+import AutocompleteServer from "./components/AutocompleteServer.vue"
+import AutoExternalRelation from "./components/AutoExternalRelation.vue"
+import AutoForm from "./components/AutoForm.vue"
+import AutoFormDialog from "./components/AutoFormDialog.vue"
+import AutoTable from "./components/AutoTable.vue"
+import DestroyDialog from "./components/DestroyDialog.vue"
+import DestroyPermanentDialog from "./components/DestroyPermanentDialog.vue"
+import ExpandableList from "./components/ExpandableList.vue"
+import ExpandableText from "./components/ExpandableText.vue"
+import HistoryDialog from "./components/HistoryDialog.vue"
+import LoadingOverlay from "./components/LoadingOverlay.vue"
+import RestoreDialog from "./components/RestoreDialog.vue"
+import VDatetimePicker from "./components/VDatetimePicker.vue"
 
-const install = (app) => {
-  // Registrar cada componente
-  for (const componentKey in components) {
-    const component = components[componentKey]
-    app.component(component.name, component)
-  }
-
-  // Usar Vuetify
-  app.use(vuetify)
+export {
+  AutoCalendar,
+  AutocompleteServer,
+  AutoExternalRelation,
+  AutoForm,
+  AutoFormDialog,
+  AutoTable,
+  DestroyDialog,
+  DestroyPermanentDialog,
+  ExpandableList,
+  ExpandableText,
+  HistoryDialog,
+  LoadingOverlay,
+  RestoreDialog,
+  VDatetimePicker,
 }
-
-export default { install }
-export * from "./components"

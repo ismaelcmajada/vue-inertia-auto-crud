@@ -13,6 +13,7 @@ import { useDisplay } from "vuetify"
 import { computed, watch, ref } from "vue"
 import { generateItemTitle } from "@/utils/datatableUtils"
 
+import "vuetify/styles"
 const page = usePage()
 
 const { mobile } = useDisplay()
@@ -49,7 +50,7 @@ const model = computed(() => {
 })
 
 const forbiddenActions =
-  model.value.forbiddenActions[page.props.auth.user.role] ?? []
+  model.value.forbiddenActions[page.props?.auth.user.role] ?? []
 
 const {
   endPoint,
