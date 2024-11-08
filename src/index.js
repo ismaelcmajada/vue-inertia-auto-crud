@@ -13,6 +13,39 @@ import LoadingOverlay from "./components/LoadingOverlay.vue"
 import RestoreDialog from "./components/RestoreDialog.vue"
 import VDatetimePicker from "./components/VDatetimePicker.vue"
 
+const components = [
+  AutoCalendar,
+  AutocompleteServer,
+  AutoExternalRelation,
+  AutoForm,
+  AutoFormDialog,
+  AutoTable,
+  DestroyDialog,
+  DestroyPermanentDialog,
+  ExpandableList,
+  ExpandableText,
+  HistoryDialog,
+  LoadingOverlay,
+  RestoreDialog,
+  VDatetimePicker,
+]
+
+const install = (app, options) => {
+  components.forEach((component) => {
+    if (component.name) {
+      app.component(component.name, component)
+    } else {
+      console.warn(
+        `El componente siguiente no tiene definido el atributo 'name':`,
+        component
+      )
+    }
+  })
+}
+export default {
+  install,
+}
+
 export {
   AutoCalendar,
   AutocompleteServer,

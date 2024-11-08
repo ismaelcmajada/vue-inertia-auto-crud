@@ -1,4 +1,8 @@
 <script setup>
+defineOptions({
+  name: "ExpandableText",
+})
+
 import { ref, computed } from "vue"
 
 const props = defineProps(["text", "length"])

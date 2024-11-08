@@ -7,6 +7,10 @@ import { ruleRequired, getFieldRules } from "@/utils/rules"
 import AutoFormDialog from "./AutoFormDialog.vue"
 import { generateItemTitle, searchByWords } from "@/utils/autocompleteUtils"
 
+defineOptions({
+  name: "AutoExternalRelation",
+})
+
 const props = defineProps([
   "item",
   "endPoint",

@@ -2,6 +2,10 @@
 import { ref, computed, watch, onMounted } from "vue"
 import { format, parse } from "date-fns"
 
+defineOptions({
+  name: "VDatetimePicker",
+})
+
 const DEFAULT_DATE = null // Cambiado a null para representar la ausencia de fecha
 const DEFAULT_TIME = "00:00:00"
 const DEFAULT_DATE_FORMAT = "dd-MM-yyyy"

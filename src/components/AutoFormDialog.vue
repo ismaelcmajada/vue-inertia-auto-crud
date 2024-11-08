@@ -3,6 +3,10 @@ import AutoForm from "./AutoForm.vue"
 import { computed, ref } from "vue"
 import { usePage } from "@inertiajs/vue3"
 
+defineOptions({
+  name: "AutoFormDialog",
+})
+
 const page = usePage()
 
 const props = defineProps([

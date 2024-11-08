@@ -2,6 +2,10 @@
 import { computed } from "vue"
 import { router } from "@inertiajs/vue3"
 
+defineOptions({
+  name: "DestroyPermanentDialog",
+})
+
 const props = defineProps(["show", "elementName", "item", "items", "endPoint"])
 
 const emit = defineEmits(["closeDialog", "reloadItems"])

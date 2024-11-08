@@ -8,7 +8,11 @@ import { formatDate, formatDateTime } from "@/utils/dates"
 import { getFieldRules } from "@/utils/rules"
 import AutoFormDialog from "./AutoFormDialog.vue"
 import { searchByWords, generateItemTitle } from "@/utils/autocompleteUtils"
-import VDatetimePicker from "@/components/VDatetimePicker.vue"
+import VDatetimePicker from "./VDatetimePicker.vue"
+
+defineOptions({
+  name: "AutoForm",
+})
 
 const props = defineProps([
   "item",

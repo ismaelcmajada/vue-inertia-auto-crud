@@ -10,10 +10,13 @@ import useDialogs from "../composables/useDialogs"
 import HistoryDialog from "./HistoryDialog.vue"
 import { usePage } from "@inertiajs/vue3"
 import { useDisplay } from "vuetify"
-import { computed, watch, ref } from "vue"
+import { computed, watch, ref, defineComponent } from "vue"
 import { generateItemTitle } from "@/utils/datatableUtils"
 
-import "vuetify/styles"
+defineOptions({
+  name: "AutoTable",
+})
+
 const page = usePage()
 
 const { mobile } = useDisplay()

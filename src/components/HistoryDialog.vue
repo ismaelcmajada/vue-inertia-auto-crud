@@ -1,4 +1,8 @@
 <script setup>
+defineOptions({
+  name: "HistoryDialog",
+})
+
 import { computed } from "vue"
 
 const props = defineProps(["show", "records"])

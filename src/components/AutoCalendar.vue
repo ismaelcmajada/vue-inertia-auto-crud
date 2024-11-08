@@ -8,6 +8,10 @@ import { formatCalendarDate, formatDateTime } from "@/utils/dates"
 import { computed, ref, watch } from "vue"
 import { generateItemTitle } from "@/utils/datatableUtils"
 
+defineOptions({
+  name: "AutoCalendar",
+})
+
 const props = defineProps(["model", "reset", "activeView"])
 
 const emit = defineEmits(["update:reset"])

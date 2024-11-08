@@ -1,6 +1,10 @@
 <script setup>
 import { ref, computed } from "vue"
 
+defineOptions({
+  name: "ExpandableList",
+})
+
 const props = defineProps(["text", "length"])
 
 const text = computed(() => props.text ?? "")

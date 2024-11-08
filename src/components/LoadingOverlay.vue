@@ -12,3 +12,9 @@
   z-index: 9999;
 }
 </style>
+
+<script setup>
+defineOptions({
+  name: "LoadingOverlay",
+})
+</script>

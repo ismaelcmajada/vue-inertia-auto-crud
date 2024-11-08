@@ -4,6 +4,10 @@ import axios from "axios"
 import debounce from "lodash.debounce"
 import { generateItemTitle } from "@/utils/autocompleteUtils"
 
+defineOptions({
+  name: "AutocompleteServer",
+})
+
 const props = defineProps([
   "modelValue",
   "itemTitle",

@@ -1,11 +1,9 @@
 {
   "name": "vue-inertia-auto-crud",
   "version": "1.0.0",
-  "main": "dist/vue-inertia-auto-crud.umd.js",
-  "module": "dist/vue-inertia-auto-crud.es.js",
-  "files": [
-    "dist"
-  ],
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
@@ -14,21 +12,21 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "peerDependencies": {
+    "vue": "^3.*",
+    "vuetify": "^3.*",
+    "@inertiajs/vue3": "^1.*"
+  },
   "devDependencies": {
-    "@inertiajs/inertia": "^0.11.1",
-    "@inertiajs/inertia-vue3": "^0.6.0",
-    "@inertiajs/vue3": "^1.0.0",
     "@mdi/font": "^7.2.96",
     "@vitejs/plugin-vue": "^5.1.4",
     "axios": "^1.1.2",
     "vite": "^5.4.10",
-    "vue": "^3.5.12",
-    "vuetify": "^3.7.4"
+    "vite-plugin-vuetify": "^2.0.4"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
     "lodash.debounce": "^4.0.8",
-    "vite-plugin-vuetify": "^2.0.4",
     "vue-cal": "^4.10.0",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz"
   }
